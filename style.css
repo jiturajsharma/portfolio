@@ -48,6 +48,7 @@ body {
 
 .main-section{
     height: 100vh;
+    font-weight: 100vh;
     background: #1e3c72;
     color: #fff;
     display: flex;
@@ -453,74 +454,192 @@ body {
     color: #74ebd5;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-footer {
     background: #333;
     color: #fff;
     padding: 15px;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Header and Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    /* Hero Section Adjustments */
+    .main-section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+
+    .image-content img {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .resume-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* About Section Adjustments */
+    .about-section-page {
+        padding: 10px;
+    }
+
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .about-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    /* Slider Section */
+    .slider-page {
+        padding: 20px;
+    }
+
+    .slider {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 120px;
+        height: 60px;
+    }
+
+    /* Experience Section */
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-group input, 
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-links a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .main-footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Further Mobile Optimization for smaller devices */
+@media screen and (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .about-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        padding: 8px 10px;
+    }
 }

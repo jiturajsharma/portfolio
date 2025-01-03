@@ -1,4 +1,12 @@
-// JavaScript for smooth scrolling and basic interactions
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
     // Smooth scrolling for navbar links
@@ -20,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Smooth scroll for the "Get in touch" button
-    const getInTouchButton = document.querySelector(".resume-btn[href='']");
+    const getInTouchButton = document.querySelector(".resume-btn[href='#contact']");
     const contactSection = document.getElementById("contact");
 
     if (getInTouchButton && contactSection) {
